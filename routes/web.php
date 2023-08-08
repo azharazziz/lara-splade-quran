@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SurahController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['splade'])->group(function () {
-    Route::get('/', fn () => view('home'))->name('home');
+    // Route::get('/', fn () => view('home'))->name('home');
     Route::get('/docs', fn () => view('docs'))->name('docs');
+
+    Route::controller(SurahController::class)->group(function () {
+        Route::get('/', 'show');
+        Route::get('/surah', 'show');
+        Route::get('/surah/{id}', 'ayat')->name('ayat');
+    });
 
     // Registers routes to support the interactive components...
     Route::spladeWithVueBridge();

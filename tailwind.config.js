@@ -15,7 +15,11 @@ export default {
     ],
 
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'frame-number': "url('/public/img/frame-number.svg')",
+              },
+        },
     },
 
     plugins: [forms, typography],

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-arabic {
+    font-family: 'Amiri Quran', serif;
+    text-align: right;
+}
