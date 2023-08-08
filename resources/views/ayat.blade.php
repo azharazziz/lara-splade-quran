@@ -6,7 +6,7 @@
     @endif
 
     @foreach ($verses as $verse)
-        <x-ayat-card number="{{ $verse['number']['inSurah'] }}" verse="{{ $verse['text']['arab'] }}" translation="{{ $verse['translation']['id'] }}" transliteration="{{ $verse['text']['transliteration']['en'] }}" tafsir="{{ $verse['tafsir']['id']['short'] }}" />
+        <x-ayat-card number="{{ $verse['number']['inSurah'] }}" verse="{{ $verse['text']['arab'] }}" translation="{{ $verse['translation']['id'] }}" transliteration="{{ $verse['text']['transliteration']['en'] }}" tafsir="{{ $verse['tafsir']['id']['long'] }}" />
     @endforeach
 
 </x-layout>
