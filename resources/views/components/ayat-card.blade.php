@@ -1,5 +1,5 @@
 <div class="group flex flex-col justify-center gap-2 p-5 bg-white">
-    <span class="font-arabic font-bold text-2xl mb-2 leading-loose">{{ $verse }}</span>
+    <span class="font-arabic font-bold text-2xl leading-loose">{{ $verse }}</span>
     <span class=" font-bold">{!! $transliteration !!}</span>
     <span class="text-xs text-gray-500 italic">{!! $translation !!}</span>
     <div class="mt-2">
