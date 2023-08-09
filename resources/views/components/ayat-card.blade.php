@@ -1,4 +1,4 @@
-<div class="group flex flex-col justify-center gap-2 p-5 bg-white">
+<div class="group flex flex-col justify-center gap-2 p-5 bg-white shadow-lg">
     <p dir="rtl" class="font-arabic font-bold text-2xl leading-loose text-right">{{ $verse }}<span class="font-bold">﴿<span class="text-sm font-bold">{{ $number }}</span>﴾</span></p>
     <p class=" font-bold">{!! $transliteration !!}</p>
     <p class="text-xs text-gray-500 italic">{!! $translation !!}</p>

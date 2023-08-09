@@ -8,7 +8,7 @@
             <div class="text-xs text-gray-500 italic">{!! $translation !!}</div>
         </div>
         <div class="w-full flex items-center justify-center">
-            <span class="font-arabic font-bold">{{ $name }}</span>
+            <span class="font-arabic font-bold text-2xl">{{ $name }}</span>
         </div>
     </div>
 </Link>
