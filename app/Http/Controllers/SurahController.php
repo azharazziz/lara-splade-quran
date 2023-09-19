@@ -13,7 +13,6 @@ class SurahController extends Controller
         $response = Http::get('https://api.quran.gading.dev/surah')->collect();
         $surahs = $response['data'];
 
-        // dd($surahs);
         return view('surah', [
             'surahs' => $surahs,
         ]);
@@ -34,6 +33,7 @@ class SurahController extends Controller
         } else {
             abort(404);
         };
+
         return view('ayat', [
             'preBismillah' => $prebismillah,
             'verses' => $verses,
